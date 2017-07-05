@@ -1,0 +1,27 @@
+About the code
+
+File with R code "Analysis.R" does the following steps
+
+Merging the training and the test data sets 
+Read files
+Read train dataset
+Read test dataset
+Read features
+Read activity labels
+Assign column names
+Merge all data in one set
+Subsetting only the measurements on the mean and standard deviation for each measurement
+Read column names from features with ID
+Make subset of all measurements
+Using descriptive activity names to name the activities in the data set
+Appropriately labeling the data set with descriptive variable names
+Creating a second, independent clean data set with the mean of the subset parameters for each activity and each subject
+Make second tidy data set 
+Write second tidy data set in txt file
+About variables:
+
+xTrain, yTrain, xTest, yTest, subjectTrain and subjectTest contain the data from the downloaded files.
+xFull, yFull and subjectFull contain the merged datasets for further analysis.
+features contain the parameter names for the xFull dataset (subset to xFull_msd only for the mean and  srd. deviation)
+activities contain the activity labels which is then assigned to the yFull dataframe
+Merged contains the combined columns of xFull_msd, yFull and subjectFull
